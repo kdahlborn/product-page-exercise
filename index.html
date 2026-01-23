@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./js/products.js" defer></script>
+        <script src="./js/script.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/b0ab95b079.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <section class="product-page">
+            <img src="./img/header.png" alt="" class="header-img" />
+            <button class="cart-btn">
+                <i class="fa-solid fa-bag-shopping" style="color: #ffffff"></i>
+                <span class="cart-btn__qty">1</span>
+            </button>
+            <section class="cart">
+                <section class="cart__top">
+                    <h2 class="cart__title">Din beställning</h2>
+                    <ul class="cart__list" id="cartList">
+                        <li class="item">
+                            <div class="item__info">
+                                <h4 class="item__name">Bryggkaffe</h4>
+                                <p class="item__price">49 kr</p>
+                            </div>
+                            <div class="qty">
+                                <button class="qty__btn" id="increase">
+                                    <i
+                                        class="fa-solid fa-angle-up"
+                                        style="color: #2f2926"
+                                    ></i>
+                                </button>
+                                <p class="qty__num">2</p>
+                                <button
+                                    class="qty__btn qty__btn--down"
+                                    id="decrease"
+                                >
+                                    <i
+                                        class="fa-solid fa-angle-up"
+                                        style="color: #2f2926"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item__info">
+                                <h4 class="item__name">Bryggkaffe</h4>
+                                <p class="item__price">49 kr</p>
+                            </div>
+                            <div class="qty">
+                                <button class="qty__btn" id="increase">
+                                    <i
+                                        class="fa-solid fa-angle-up"
+                                        style="color: #2f2926"
+                                    ></i>
+                                </button>
+                                <p class="qty__num">2</p>
+                                <button
+                                    class="qty__btn qty__btn--down"
+                                    id="decrease"
+                                >
+                                    <i
+                                        class="fa-solid fa-angle-up"
+                                        style="color: #2f2926"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="cart__bottom">
+                    <section class="summary">
+                        <div class="summary__top">
+                            <h3 class="summary__title">Total</h3>
+                            <h3 class="summary__price">350 kr</h3>
+                        </div>
+                        <p class="summary__info">inkl moms + drönarleverans</p>
+                    </section>
+                    <button class="cart__cta-btn">Take my money!</button>
+                </section>
+            </section>
+            <h1 class="page-title--menu">Meny</h1>
+            <ul class="product-menu" id="productMenu">
+                <li class="product">
+                    <button class="product__btn">+</button>
+                    <article class="product__info">
+                        <h2 class="product__title">
+                            Bryggkaffe...............
+                        </h2>
+                        <p class="product__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Aliquam, consectetur.
+                        </p>
+                    </article>
+                    <h3 class="product__price">49kr</h3>
+                </li>
+            </ul>
+            <img src="./img/footer.png" alt="" class="footer-img" />
+        </section>
+    </body>
+</html>
